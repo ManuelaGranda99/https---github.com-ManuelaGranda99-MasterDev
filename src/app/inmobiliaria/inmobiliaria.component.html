@@ -1,0 +1,52 @@
+<div class="menu">
+    <section id="centro">
+        <p>{{datos.respo}}</p>
+        <button class="button" id="submit2" name="submit2" (click)="getConsulta()">Consulta</button>
+    </section>
+    <section id="contenido">
+        <h2>Registro Inmueble</h2>
+        <div class="campo">
+            <p><i class="fas fa-house-user icon"></i>
+                <input type="text" class="form-control input-lg text-center" placeholder="Nombre" id="Nombre"></p>
+        </div>
+        <div class="campo">
+            <p><i class="far fa-question-circle icon"></i>
+                <input type="text" class="form-control input-lg text-center" placeholder="Tipo" id="Tipo"></p>
+        </div>
+        <div class="campo">
+            <p><i class="fas fa-map-marked-alt icon"></i>
+                <input type="text" class="form-control input-lg text-center" placeholder="Barrio" id="Barrio"></p>
+        </div>
+        <div class="campo">
+            <p><i class="fas fa-money-check icon"></i>
+                <input type="text" class="form-control input-lg text-center" placeholder="Transaccion" id="Transaccion"></p>
+        </div>
+        <div class="campo">
+            <p><i class="fas fa-chart-area icon"></i>
+                <input type="text" class="form-control input-lg text-center" placeholder="Area m2" id="Area"></p>
+        </div>
+        <div class="campo">
+            <p><i class="fas fa-toilet icon"></i>
+                <input type="text" class="form-control input-lg text-center" placeholder="# Baños" id="Banios"></p>
+        </div>
+        <div class="campo">
+            <p><i class="fas fa-bed icon"></i>
+                <input type="text" class="form-control input-lg text-center" placeholder="# Habitaciones" id="habitaciones"></p>
+        </div>
+        <div class="campo">
+            <p><i class="fas fa-funnel-dollar icon"></i>
+                <input type="text" class="form-control input-lg text-center" placeholder="Estrato" id="Estrato"></p>
+        </div>
+        <div class="campo">
+            <p><i class="fas fa-money-bill-wave icon"></i>
+                <input type="text" class="form-control input-lg text-center" placeholder="Precio" id="Precio"></p>
+        </div>
+        <div class="campo">
+            <p><i class="fas fa-money-bill-wave icon"></i>
+                <input type="file" class="form-control input-lg text-center" id="files" (change)="setFile($event)"></p>
+        </div>
+
+        <p><button class="button" id="submit" name="submit" (click)="registrarInmueble()">Registrar</button></p>
+        <!--<br> {{msj}}-->
+    </section>
+</div>

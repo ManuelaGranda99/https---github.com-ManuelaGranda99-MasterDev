@@ -1,0 +1,57 @@
+<div class="container">
+    <h1 class="display-5 txt-centr">Consulta de Inmuebles</h1>
+    <div class="row g-2 row-cols-lg-5">
+        <div class="col-6 p-3 border bg-light">
+            <select name="select" id="consulTipo">
+                    <option value="selec" selected>Seleccionar</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="apartaestudio">ApartaEstudio</option>
+                    <option value="oficina">Oficina</option>
+                    <option value="lote">Lote</option>
+                    <option value="edificio">Edificio</option>
+                </select>
+        </div>
+        <div class="col-6 p-3 border bg-light">
+            <select name="select" id="consulTransaccion">
+                <option value="selec" selected>Seleccionar</option>
+                <option value="arriendo">Arriendo</option>
+                <option value="venta">Venta</option>
+            </select>
+        </div>
+        <div class="col-6 p-3 border bg-light">
+            <p>cantidad de Habitaciones </p>
+            <input type="text" id="consulHabitaciones" placeholder="habitaciones">
+        </div>
+        <div class="col-6 p-3 border bg-light">
+            <p>Barrio </p>
+            <input type="text" id="consulbarrio" placeholder="barrio">
+        </div>
+        <div class="col-6 p-3 border bg-light">
+            <button class="btn btn-primary" id="submitCon" (click)="consultaInmueble()">Consultar</button>
+        </div>
+    </div>
+</div>
+<div class="container p-4"></div>
+<div class="container p-4"></div>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let res of disponible; let i = index">
+            <div class="card">
+                <img [src]="res.imagen" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> {{res.ubicacion.barrio}}</h5>
+                    <p class="card-text">Zona: {{res.ubicacion.zona}}</p>
+                    <p class="card-text">Tipo: {{res.tipo}}</p>
+                    <p class="card-text">Nombre: {{res.nombre}}</p>
+                    <p class="card-text">Transacción: {{res.Transaccion}}</p>
+                    <p class="card-text">Área: {{res.Area}}</p>
+                    <p class="card-text">Baños: {{res.Banios}}</p>
+                    <p class="card-text">Habitaciones: {{res.habitaciones}}</p>
+                    <p class="card-text">Estrato: {{res.Estrato}}</p>
+                    <p class="card-text">Precio: {{res.Precio}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

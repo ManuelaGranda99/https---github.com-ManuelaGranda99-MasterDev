@@ -1,0 +1,10 @@
+<div class="campito">
+    <div class="sp" *ngFor="let res of disponible; let i = index">
+        <img [src]="res.imagen" height="220px" width="220px">
+        <p>id: {{i+1}}</p>
+        <p>Nombre: {{res.nombre}}</p>
+        <p>Tipo: {{res.tipo}}</p>
+        <p>Zona: {{res.ubicacion.zona}}</p>
+        <p>Barrio: {{res.ubicacion.barrio}}</p>
+    </div>
+</div>
