@@ -5,22 +5,22 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 8px 0;
-  }
+}
 
-  p {
+p {
     margin: 0;
-  }
+}
 
-  ul li {
+ul li {
     color: white;
     float: left;
     list-style: none;
@@ -28,13 +28,13 @@
     margin-left: 35px;
     line-height: 20px;
     font-size: 26px;
-  }
+}
 
-  .spacer {
+.spacer {
     flex: 1;
-  }
+}
 
-  .toolbar {
+.toolbar {
     position: absolute;
     top: 0;
     left: 0;
@@ -45,46 +45,51 @@
     background-color: #1976d2;
     color: white;
     font-weight: 600;
-  }
+}
 
-  .toolbar img {
+.toolbar img {
     margin: 0 16px;
-  }
+}
 
-  .toolbar #twitter-logo {
+.toolbar #twitter-logo {
     height: 40px;
     margin: 0 8px;
-  }
+}
 
-  .toolbar #youtube-logo {
+.toolbar #youtube-logo {
     height: 40px;
     margin: 0 16px;
-  }
+}
 
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
     opacity: 0.8;
-  }
+}
 
-
-  a {
+a {
     color: white;
     text-decoration: none;
+}
 
-  }
-
-  a:hover {
+a:hover {
     color: #125699;
-  }
+}
 
-  footer {
+footer {
     margin-top: 8px;
     display: flex;
     align-items: center;
     line-height: 20px;
-  }
+}
 
-  footer a {
+footer a {
     display: flex;
     align-items: center;
-  }
+}
+
+.logout {
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGUvPjxnIGlkPSJsb2dvdXQiPjxsaW5lIGNsYXNzPSJjbHMtMSIgeDE9IjE1LjkyIiB4Mj0iMjguOTIiIHkxPSIxNiIgeTI9IjE2Ii8+PHBhdGggZD0iTTIzLjkzLDI1djNoLTE2VjRoMTZWN2gyVjNhMSwxLDAsMCwwLTEtMWgtMThhMSwxLDAsMCwwLTEsMVYyOWExLDEsMCwwLDAsMSwxaDE4YTEsMSwwLDAsMCwxLTFWMjVaIi8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMjguOTIiIHgyPSIyNC45MiIgeTE9IjE2IiB5Mj0iMjAiLz48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIyOC45MiIgeDI9IjI0LjkyIiB5MT0iMTYiIHkyPSIxMiIvPjxsaW5lIGNsYXNzPSJjbHMtMSIgeDE9IjI0LjkyIiB4Mj0iMjQuOTIiIHkxPSI4LjA5IiB5Mj0iNi4wOSIvPjxsaW5lIGNsYXNzPSJjbHMtMSIgeDE9IjI0LjkyIiB4Mj0iMjQuOTIiIHkxPSIyNiIgeTI9IjI0Ii8+PC9nPjwvc3ZnPg==");
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

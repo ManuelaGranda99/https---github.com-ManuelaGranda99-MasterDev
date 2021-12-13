@@ -1,47 +1,13 @@
 <div class="menu">
-    <section id="centro">
-        <h1>Consulta de usuarios</h1>
-        <div class="campo-c">
-            <select name="select" id="consul">
-                    <option value="nombre">Nombre</option>
-                    <option value="apellido">Apellido</option>
-                    <option value="cedula">Cedula</option>
-                </select>
-            <input type="text" id="consulta" placeholder="Consulte">
-            <button class="btn" id="submitCon" (click)="consultaUsu()">Consultar</button>
+    <section id="centro" *ngIf="isLogin=='false'">
+        <h1>Login de usuarios</h1>
+        <div class="login">
+            <label>Usuario</label><br/>
+            <input type="text" name="usuario" id="usuario"><br/>
+            <label>Contraseña</label><br/>
+            <input type="password" name="contrasena" id="contrasena">
+            <button (click)="login()"> Login</button>
         </div>
-        <h1>{{aconsultar}}</h1>
-        <!-- <div *ngFor="let res of resConsulta; let i = index">
-                <p>Cedula: {{res.cedula}}</p>
-                <p>Nombre: {{res.nombre}}</p>
-                <p>Apellido: {{res.apellido}}</p>
-                <p>Correo: {{res.correo}}</p>
-                <p>Celular: {{res.celular}}</p>
-                <p>User: {{res.user}}</p>
-                <p>Password: {{res.clave}}</p>
-            </div> -->
-        <table>
-            <tr>
-                <td>#</td>
-                <td>Cedula</td>
-                <td>Nombre</td>
-                <td>Apellido</td>
-                <td>Correo</td>
-                <td>Celular</td>
-                <td>User</td>
-                <td>Password</td>
-            </tr>
-            <tr *ngFor="let res of resConsulta; let i = index">
-                <td>{{i+1}}</td>
-                <td>{{res.cedula}}</td>
-                <td>{{res.nombre}}</td>
-                <td>{{res.apellido}}</td>
-                <td>{{res.correo}}</td>
-                <td>{{res.celular}}</td>
-                <td>{{res.user}}</td>
-                <td>{{res.clave}}</td>
-            </tr>
-        </table>
     </section>
     <section id="contenido">
         <h2>Registro Usuarios</h2>

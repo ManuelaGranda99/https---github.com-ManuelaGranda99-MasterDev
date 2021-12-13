@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ConsultaEdificioService } from '../consulta-edificio.service';
 
 @Component({
@@ -13,9 +14,12 @@ export class ConsultaEdificioComponent implements OnInit {
   aconsultar:any;
   resConsulta:any;
 
-  constructor(private service: ConsultaEdificioService) { }
+  constructor(private service: ConsultaEdificioService, private route: Router) { }
 
   ngOnInit(): void {
+    if(localStorage.getItem("isLogin") == null){
+      this.route.navigate(["/user"]);
+    }
     this.service.getConsulta().subscribe( data=>{
       this.disponible=data;      
     });
